@@ -11,6 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -21,7 +24,7 @@
             <nav class="nav-page">
                 <a href="./index.html" class="logo"> Web<span class="black-logo">Studio</span></a>
                 <ul class="list">
-                    <li class="header-item"><a href="./studio.html" class="header-link">Студия</a></li>
+                    <li class="header-item"><a href="./index.html" class="header-link">Студия</a></li>
                     <li class="header-item"><a href="./portfolio.html" class="header-link">Портфолио</a></li>
                     <li class="header-item"><a href="" class="header-link">Контакты</a></li>
                 </ul>
@@ -36,12 +39,14 @@
     <main>
         <div>
             <section class="hero">
+                <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero-button"> Заказать услугу</button>
+                </div>
             </section>
         </div>
         <!--Особенности кампании -->
-        <section class="section">
+        <section class="section peculiarities-section">
             <h2 class="hide">Особенности</h2>
             <div class="container">
                 <ul class="peculiarities-list">
@@ -84,44 +89,58 @@
         </section>
 
         <!--Наша команда-->
-        <section class="section">
+        <section class="section team-section">
             <h2 class="team-title">Наша команда</h2>
             <div class="container">
                 <ul class="team-list">
                     <li class="team-item">
                         <img src="./images/product-designer.jpg" alt="Product Designer" width="270" height="260">
-                        <h3 class="employee">Игорь Демьяненко</h3>
-                        <p class="position">Product Designer</p>
+                        <div class="employee-content">
+                            <h3 class="employee">Игорь Демьяненко</h3>
+                            <p class="position" lang="en">Product Designer</p>
+                        </div>
+                        
                     </li>
                     <li class="team-item">
                         <img src="./images/frontend-developer.jpg" alt="Frontend Developer" width="270" height="260">
-                        <h3 class="employee">Ольга Репина</h3>
-                        <p class="position">Frontend Developer</p>
+                        <div class="employee-content">
+                            <h3 class="employee">Ольга Репина</h3>
+                            <p class="position" lang="en">Frontend Developer</p>
+                        </div>
+                     
                     </li>
                     <li class="team-item">
                         <img src="./images/marketng.jpg" alt="Marketing" width="270" height="260">
-                        <h3 class="employee">Николай Тарасов</h3>
-                        <p class="position">Marketing</p>
+                        <div class="employee-content">
+                            <h3 class="employee">Николай Тарасов</h3>
+                            <p class="position" lang="en">Marketing</p>
+                        </div>
+                        
                     </li>
                     <li class="team-item">
                         <img src="./images/ui-designer.jpg" alt="UI Designer" width="270" height="260">
-                        <h3 class="employee">Михаил Ермаков</h3>
-                        <p class="position">UI Designer</p>
+                        <div class="employee-content">
+                            <h3 class="employee">Михаил Ермаков</h3>
+                            <p class="position" lang="en">UI Designer</p>
+                        </div>
+                      
                     </li>
                 </ul>
             </div>
         </section>
     </main>
     <!--Подвал-->
-    <footer class="footer">
-        <a href="./index.html" class="logo"> Web<span class="white-logo">Studio</span></a>
+    <footer class="footer"> 
+        <div class="container">
+        <a href="./index.html" class="logo footer-logo"> Web<span class="white-logo">Studio</span></a>
         <address>
             <p class="actual-address">г. Киев, пр-т Леси Украинки, 26 </p>
             <ul>
-                <li class="contacts-item"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-                <li class="contacts-item"><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
+                <li class="contacts-item footer-contacts-item"><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
+                <li class="contacts-item footer-contacts-item"><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
             </ul>
         </address>
+        </div>
     </footer>
 
 </body>
